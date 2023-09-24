@@ -1,0 +1,123 @@
+[
+    {
+      "image": "https://i.ibb.co/FJ0LLgJ/Clothing.png",
+      "title": "Product 1",
+      "category_name": "Electronics",
+      "description": "A high-quality electronic device.",
+      "price": 199.99,
+      "card_background_color": "#F7F7F7",
+      "category_bg_color": "#3498db",
+      "text_color": "#333333"
+    },
+    {
+      "image": "https://i.ibb.co/qB7D5Ng/Education.png",
+      "title": "Product 2",
+      "category_name": "Clothing",
+      "description": "Stylish clothing item for any occasion.",
+      "price": 49.99,
+      "card_background_color": "#EDEDED",
+      "category_bg_color": "#E74C3C",
+      "text_color": "#FFFFFF"
+    },
+    {
+      "image": "https://i.ibb.co/t8njFTW/Food.png",
+      "title": "Product 3",
+      "category_name": "Home & Garden",
+      "description": "Decorative item for your home.",
+      "price": 79.99,
+      "card_background_color": "#F2F2F2",
+      "category_bg_color": "#27AE60",
+      "text_color": "#333333"
+    },
+    {
+      "image": "https://i.ibb.co/gyfmFFy/Health.png",
+      "title": "Product 4",
+      "category_name": "Books",
+      "description": "Bestselling novel by a famous author.",
+      "price": 14.99,
+      "card_background_color": "#FAFAFA",
+      "category_bg_color": "#9B59B6",
+      "text_color": "#333333"
+    },
+    {
+      "image": "https://i.ibb.co/my3gQ9W/Rectangle-4284.png",
+      "title": "Product 5",
+      "category_name": "Beauty",
+      "description": "Beauty product for radiant skin.",
+      "price": 29.99,
+      "card_background_color": "#F5F5F5",
+      "category_bg_color": "#E67E22",
+      "text_color": "#333333"
+    },
+    {
+      "image": "https://i.ibb.co/drC8j54/Rectangle-4287.png",
+      "title": "Product 6",
+      "category_name": "Toys",
+      "description": "Fun and educational toy for kids.",
+      "price": 39.99,
+      "card_background_color": "#F9F9F9",
+      "category_bg_color": "#3498db",
+      "text_color": "#333333"
+    },
+    {
+      "image": "https://i.ibb.co/x7J6NbF/Rectangle-4287-1.png",
+      "title": "Product 7",
+      "category_name": "Sports & Outdoors",
+      "description": "Outdoor gear for adventurous souls.",
+      "price": 149.99,
+      "card_background_color": "#EFEFEF",
+      "category_bg_color": "#27AE60",
+      "text_color": "#333333"
+    },
+    {
+      "image": "https://i.ibb.co/FJ0LLgJ/Clothing.png",
+      "title": "Product 8",
+      "category_name": "Electronics",
+      "description": "Advanced tech gadget for tech enthusiasts.",
+      "price": 299.99,
+      "card_background_color": "#F7F7F7",
+      "category_bg_color": "#3498db",
+      "text_color": "#333333"
+    },
+    {
+      "image": "https://i.ibb.co/FJ0LLgJ/Clothing.png",
+      "title": "Product 9",
+      "category_name": "Clothing",
+      "description": "Fashionable attire for special occasions.",
+      "price": 69.99,
+      "card_background_color": "#EDEDED",
+      "category_bg_color": "#E74C3C",
+      "text_color": "#FFFFFF"
+    },
+    {
+      "image": "https://i.ibb.co/t8njFTW/Food.png",
+      "title": "Product 10",
+      "category_name": "Home & Garden",
+      "description": "Practical household item for everyday use.",
+      "price": 19.99,
+      "card_background_color": "#F2F2F2",
+      "category_bg_color": "#27AE60",
+      "text_color": "#333333"
+    },
+    {
+      "image": "image11.jpg",
+      "title": "Product 11",
+      "category_name": "Books",
+      "description": "Intriguing mystery novel with a twist.",
+      "price": 12.99,
+      "card_background_color": "#FAFAFA",
+      "category_bg_color": "#9B59B6",
+      "text_color": "#333333"
+    },
+    {
+      "image": "https://i.ibb.co/t8njFTW/Food.png",
+      "title": "Product 12",
+      "category_name": "Beauty",
+      "description": "Luxurious skincare product for pampering.",
+      "price": 49.99,
+      "card_background_color": "#F5F5F5",
+      "category_bg_color": "#E67E22",
+      "text_color": "#333333"
+    }
+  ]
+  
