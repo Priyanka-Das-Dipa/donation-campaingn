@@ -8,8 +8,6 @@ const DonationCards = ({ donationCard }) => {
     image,
     title,
     category_name,
-    description,
-    price,
     card_background_color,
     text_color,
     category_bg_color,
@@ -39,7 +37,7 @@ const DonationCards = ({ donationCard }) => {
       {
         <Link to={`/donationCards/${id}`} onClick={handleAddToDonation}>
           <div
-            className="card w-96 shadow-xl"
+            className="card shadow-xl"
             style={{ backgroundColor: card_background_color }}
           >
             <figure>
