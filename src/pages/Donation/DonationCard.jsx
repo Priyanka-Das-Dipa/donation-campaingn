@@ -7,7 +7,6 @@ const DonationCard = ({ donation }) => {
     title,
     description,
     price,
-    decriptionBtnClr,
     text_color
   } = donation || {};
 
@@ -16,7 +15,7 @@ const DonationCard = ({ donation }) => {
       <div class="relative flex max-w-screen-xl flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
         <div class="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
           <img className="w-full" src={image} alt="ui/ux review check" />
-          <div className="-mt-12 ml-10" style={{backgroundColor:decriptionBtnClr}}>
+          <div className="-mt-12 ml-10">
             <button className="btn text-white" style={{backgroundColor: text_color}}>Donation ${price}</button>
           </div>
         </div>

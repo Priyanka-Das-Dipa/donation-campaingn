@@ -2,7 +2,7 @@ import React from 'react';
 
 const Logo = () => {
     return (
-        <div>
+        <div className='hidden md:block'>
             <img src="../../../../Resources/Logo.png" alt="" />
         </div>
     );

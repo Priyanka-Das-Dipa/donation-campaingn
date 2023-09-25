@@ -6,7 +6,7 @@ import Banner from "../Banner/Banner";
 const Navbar = () => {
   return (
     <div>
-      <div className="flex justify-between py-5 ">
+      <div className="flex justify-center md:justify-between py-5 ">
         <Logo></Logo>
         <nav>
           <ul className="flex gap-5 text-xl font-bold">
