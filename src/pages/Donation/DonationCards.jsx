@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import swal from "sweetalert";
 
 const DonationCards = ({ donationCard }) => {
   const {
@@ -14,11 +15,29 @@ const DonationCards = ({ donationCard }) => {
     category_bg_color,
   } = donationCard || {};
 
-  // const [pinkclr, setPinkclr] = useState()
+  const handleAddToDonation = () => {
+    const addToDonation = [];
+    const donationItem = JSON.parse(localStorage.getItem("itemDonation"));
+    if (!donationItem) {
+      addToDonation.push(donationCard);
+      localStorage.setItem("itemDonation", JSON.stringify(addToDonation));
+      swal("Good job!", "Your Donation Added!", "success");
+    } else {
+      const isExits = donationItem.find((donation) => donation.id === id);
+      if (!isExits) {
+        addToDonation.push(...donationItem, donationCard);
+        localStorage.setItem("itemDonation", JSON.stringify(addToDonation));
+        swal("Good job!", "Your Donation Added!", "success");
+      } else {
+        swal("Error!", "You can't add duplicate!", "error");
+      }
+    }
+  };
+
   return (
     <div>
       {
-        <Link to={`/donationCards/${id}`}>
+        <Link to={`/donationCards/${id}`} onClick={handleAddToDonation}>
           <div
             className="card w-96 shadow-xl"
             style={{ backgroundColor: card_background_color }}
