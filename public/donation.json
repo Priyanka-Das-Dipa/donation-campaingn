@@ -4,132 +4,144 @@
       "image": "https://i.ibb.co/FJ0LLgJ/Clothing.png",
       "title": "Clean water for children",
       "category_name": "Health",
-      "description": "A high-quality electronic device.",
+      "description": "Being healthy should be part of your overall lifestyle. Living a healthy lifestyle can help prevent chronic diseases and long-term illnesses. Feeling good about yourself and taking care of your health are important for your self-esteem and self-image. Maintain a healthy lifestyle by doing what is right for your body.",
       "price": 199.99,
       "card_background_color": "#0052ff26",
       "category_bg_color": "#0052ff33",
-      "text_color": "#0052FF"
+      "text_color": "#0052FF",
+      "decriptionBtnClr": "#0b0b0b80"
     },
     {
       "id":2,
       "image": "https://i.ibb.co/qB7D5Ng/Education.png",
       "title": "Good education",
       "category_name": "Education",
-      "description": "Stylish clothing item for any occasion.",
+      "description": "Good education refers to an education that provides learners with the necessary knowledge, skills, values, and attitudes to succeed in their personal and professional lives, as well as contribute to their communities and society at large. Good education is characterized by the following: Relevance: Good education.",
       "price": 49.99,
       "card_background_color": "#ff444a26",
       "category_bg_color": "#ff444a33",
-      "text_color": "#FF444A"
+      "text_color": "#FF444A",
+      "decriptionBtnClr": "#0b0b0b80"
     },
     {
       "id":3,
       "image": "https://i.ibb.co/t8njFTW/Food.png",
       "title": "Used Clothing Drive",
       "category_name": "Clothing",
-      "description": "Decorative item for your home.",
+      "description": "Great clothing descriptions should be written for your ideal customer. Be sure to use your distinctive brand voice, evoke emotion and tell a story. Give your customers a few style tips and never EVER copy and paste your descriptions from another website. Don't skimp on clothing descriptions.",
       "price": 79.99,
       "card_background_color": "#79c23f26",
       "category_bg_color": "#79c23f33",
-      "text_color": "#79C23F"
+      "text_color": "#79C23F",
+      "decriptionBtnClr": "#0b0b0b80"
     },
     {
       "id":4,
       "image": "https://i.ibb.co/gyfmFFy/Health.png",
       "title": "Better Food for Everyone",
       "category_name": "Food",
-      "description": "Bestselling novel by a famous author.",
+      "description": "Food that's good for health: lots of fruit and vegetables, fish and wholegrain, less but better quality meat, and a lot less processed food. Good food is even better when shared.",
       "price": 14.99,
       "card_background_color": "#f8714726",
       "category_bg_color": "#f8714733",
-      "text_color": "#F87147"
+      "text_color": "#F87147",
+      "decriptionBtnClr": "#0b0b0b80"
     },
     {
       "id":5,
       "image": "https://i.ibb.co/gyfmFFy/Health.png",
       "title": "Better Food for Everyone",
       "category_name": "Food",
-      "description": "Beauty product for radiant skin.",
+      "description": "Food that's good for health: lots of fruit and vegetables, fish and wholegrain, less but better quality meat, and a lot less processed food. Good food is even better when shared.",
       "price": 29.99,
       "card_background_color": "#f8714726",
       "category_bg_color": "#f8714733",
-      "text_color": "#F87147"
+      "text_color": "#F87147",
+      "decriptionBtnClr": "#0b0b0b80"
     },
     {
       "id":6,
       "image": "https://i.ibb.co/FJ0LLgJ/Clothing.png",
       "title": "Used Clothing Drive",
       "category_name": "Clothing",
-      "description": "Fun and educational toy for kids.",
+      "description": "Great clothing descriptions should be written for your ideal customer. Be sure to use your distinctive brand voice, evoke emotion and tell a story. Give your customers a few style tips and never EVER copy and paste your descriptions from another website. Don't skimp on clothing descriptions.",
       "price": 39.99,
       "card_background_color": "#79c23f26",
       "category_bg_color": "#79c23f33",
-      "text_color": "#79C23F"
+      "text_color": "#79C23F",
+      "decriptionBtnClr": "#0b0b0b80"
     },
     {
       "id":7,
       "image": "https://i.ibb.co/qB7D5Ng/Education.png",
       "title": "Good education",
       "category_name": "Education",
-      "description": "Outdoor gear for adventurous souls.",
+      "description": "Good education refers to an education that provides learners with the necessary knowledge, skills, values, and attitudes to succeed in their personal and professional lives, as well as contribute to their communities and society at large. Good education is characterized by the following: Relevance: Good education.",
       "price": 149.99,
       "card_background_color": "#ff444a26",
       "category_bg_color": "#ff444a33",
-      "text_color": "#FF444A"
+      "text_color": "#FF444A",
+      "decriptionBtnClr": "#0b0b0b80"
     },
     {
       "id":8,
       "image": "https://i.ibb.co/FJ0LLgJ/Clothing.png",
       "title": "Clean water for children",
       "category_name": "Health",
-      "description": "Advanced tech gadget for tech enthusiasts.",
+      "description": "Being healthy should be part of your overall lifestyle. Living a healthy lifestyle can help prevent chronic diseases and long-term illnesses. Feeling good about yourself and taking care of your health are important for your self-esteem and self-image. Maintain a healthy lifestyle by doing what is right for your body.",
       "price": 299.99,
       "card_background_color": "#0052ff26",
       "category_bg_color": "#0052ff33",
-      "text_color": "#0052FF"
+      "text_color": "#0052FF",
+      "decriptionBtnClr": "#0b0b0b80"
     },
     {
       "id":9,
       "image": "https://i.ibb.co/FJ0LLgJ/Clothing.png",
       "title": "Clean water for children",
       "category_name": "Health",
-      "description": "Fashionable attire for special occasions.",
+      "description": "Being healthy should be part of your overall lifestyle. Living a healthy lifestyle can help prevent chronic diseases and long-term illnesses. Feeling good about yourself and taking care of your health are important for your self-esteem and self-image. Maintain a healthy lifestyle by doing what is right for your body.",
       "price": 69.99,
       "card_background_color": "#0052ff26",
       "category_bg_color": "#0052ff33",
-      "text_color": "#0052FF"
+      "text_color": "#0052FF",
+      "decriptionBtnClr": "#0b0b0b80"
     },
     {
       "id":10,
       "image": "https://i.ibb.co/t8njFTW/Food.png",
       "title": "Good education",
       "category_name": "Education",
-      "description": "Practical household item for everyday use.",
+      "description": "Good education refers to an education that provides learners with the necessary knowledge, skills, values, and attitudes to succeed in their personal and professional lives, as well as contribute to their communities and society at large. Good education is characterized by the following: Relevance: Good education.",
       "price": 19.99,
       "card_background_color": "#ff444a26",
       "category_bg_color": "#ff444a33",
-      "text_color": "#FF444A"
+      "text_color": "#FF444A",
+      "decriptionBtnClr": "#0b0b0b80"
     },
     {
       "id":11,
       "image": "https://i.ibb.co/t8njFTW/Food.png",
       "title": "Used Clothing Drive",
       "category_name": "Clothing",
-      "description": "Intriguing mystery novel with a twist.",
+      "description": "Great clothing descriptions should be written for your ideal customer. Be sure to use your distinctive brand voice, evoke emotion and tell a story. Give your customers a few style tips and never EVER copy and paste your descriptions from another website. Don't skimp on clothing descriptions.",
       "price": 12.99,
       "card_background_color": "#79c23f26",
       "category_bg_color": "#79c23f33",
-      "text_color": "#79C23F"
+      "text_color": "#79C23F",
+      "decriptionBtnClr": "#0b0b0b80"
     },
     {
       "id":12,
       "image": "https://i.ibb.co/t8njFTW/Food.png",
       "title": "Better Food for Everyone",
       "category_name": "Food",
-      "description": "Luxurious skincare product for pampering.",
+      "description": "Food that's good for health: lots of fruit and vegetables, fish and wholegrain, less but better quality meat, and a lot less processed food. Good food is even better when shared.",
       "price": 49.99,
       "card_background_color": "#f8714726",
       "category_bg_color": "#f8714733",
-      "text_color": "#F87147"
+      "text_color": "#F87147",
+      "decriptionBtnClr": "#0b0b0b80"
     }
   ]
   

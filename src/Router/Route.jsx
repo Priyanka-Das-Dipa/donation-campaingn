@@ -1,9 +1,10 @@
 import { Outlet, createBrowserRouter } from "react-router-dom";
 import MainLayout from "../MainLayout/MainLayout";
 import Home from "../pages/Home/Home";
-import Donation from "../pages/Donation/Donation";
 import Statistics from "../pages/Statistics/Statistics";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Donations from "../components/Donationes/Donations";
+import DonationDescription from "../pages/Donation/DonationDescription";
 
 const myCreatedRouter = createBrowserRouter([
     {
@@ -17,13 +18,14 @@ const myCreatedRouter = createBrowserRouter([
                 loader: () => fetch('/donation.json')
             },
             {
-                path: "donation",
-                element: <Donation></Donation>
+                path: "/donationCards/:id",
+                element: <DonationDescription></DonationDescription>,
+                loader: () => fetch('/donation.json')
             },
             {
                 path: "statistics",
                 element: <Statistics></Statistics>
-            }
+            },
         ]
     }
 ])
