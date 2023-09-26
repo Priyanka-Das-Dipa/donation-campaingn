@@ -58,7 +58,7 @@ const Statistics = () => {
       <h2 className="text-3xl text-center font-medium text-blue-300">
         This is a Donation Statistics Page:
       </h2>
-      <div>
+      <div className="flex justify-center items-center">
         <PieChart width={400} height={400}>
           <Pie
             data={data}
@@ -68,16 +68,7 @@ const Statistics = () => {
             outerRadius={140}
             fill="#8884d8"
             labelLine={false}
-            label={({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => (
-              <CustomPieLabel
-                cx={cx}
-                cy={cy}
-                midAngle={midAngle}
-                innerRadius={innerRadius}
-                outerRadius={outerRadius}
-                percent={percent}
-              />
-            )}
+            label={CustomPieLabel}
           >
             {data.map((entry, index) => (
               <Cell
