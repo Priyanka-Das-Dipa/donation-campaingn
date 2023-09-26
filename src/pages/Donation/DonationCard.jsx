@@ -1,14 +1,8 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const DonationCard = ({ donation }) => {
-  const {
-    id,
-    image,
-    title,
-    description,
-    price,
-    text_color
-  } = donation || {};
+  const { id, image, title, description, price, text_color } = donation || {};
 
   return (
     <div>
@@ -16,19 +10,25 @@ const DonationCard = ({ donation }) => {
         <div class="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
           <img className="w-full" src={image} alt="ui/ux review check" />
           <div className="-mt-12 ml-10">
-            <button className="btn text-white" style={{backgroundColor: text_color}}>Donation ${price}</button>
+            <NavLink to="/statistics">
+              <button
+                className="btn text-white"
+                style={{ backgroundColor: text_color }}
+              >
+                Donation ${price}
+              </button>
+            </NavLink>
           </div>
         </div>
-        
       </div>
       <div class="pt-6 mb-10">
-          <h4 class="font-bold block font-sans text-black text-2xl leading-snug tracking-normal text-blue-gray-900 antialiased">
-            {title}
-          </h4>
-          <p class="mt-3 text-base block font-sans font-normal leading-relaxed text-gray-700 antialiased">
-            {description}
-          </p>
-        </div>
+        <h4 class="font-bold block font-sans text-black text-2xl leading-snug tracking-normal text-blue-gray-900 antialiased">
+          {title}
+        </h4>
+        <p class="mt-3 text-base block font-sans font-normal leading-relaxed text-gray-700 antialiased">
+          {description}
+        </p>
+      </div>
     </div>
   );
 };

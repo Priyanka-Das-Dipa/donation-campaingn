@@ -28,7 +28,7 @@ const Banner = () => {
 
   useEffect(() => {
     // Update filteredData when selectedCategory changes
-    setFilteredData(filterItems());
+    setFilteredData(filterItems);
   }, [selectedCategory, data]);
   return (
     <div

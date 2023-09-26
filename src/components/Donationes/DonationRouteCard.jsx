@@ -27,17 +27,17 @@ const DonationRouteCard = ({ donation }) => {
         >
           {category_name}
         </div>
-        <h4 class="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased" style={{ color: text_color }}>
+        <h4 class="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
           {title}
         </h4>
-        <p class="mb-8 text-2xl block font-sans font-semibold leading-relaxed text-gray-700 antialiased">
+        <p class="mb-8 text-2xl block font-sans font-semibold leading-relaxed text-gray-700 antialiased" style={{color:text_color}}>
           ${price}
         </p>
         <a class="inline-block" href="#">
           <button
-            class="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            class="flex select-none text-white items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
-            style={{backgroundColor: category_bg_color}}
+            style={{backgroundColor: text_color}}
           >
             View Details
           </button>
