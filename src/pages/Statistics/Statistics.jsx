@@ -1,5 +1,24 @@
 import React, { useEffect, useState } from "react";
-import { Cell, Label, Legend, Pie, PieChart } from "recharts";
+import { Cell, Legend, Pie, PieChart } from "recharts";
+
+const CustomPieLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, name }) => {
+  const RADIAN = Math.PI / 180;
+  const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+  const x = cx + radius * Math.cos(-midAngle * RADIAN);
+  const y = cy + radius * Math.sin(-midAngle * RADIAN);
+
+  return (
+    <text
+      x={x}
+      y={y}
+      fill="white"
+      textAnchor={x > cx ? "start" : "end"}
+      dominantBaseline="central"
+    >
+      {`${(percent * 100).toFixed(1)}%`}
+    </text>
+  );
+};
 
 const Statistics = () => {
   const [donations, setDonations] = useState([]);
@@ -20,6 +39,7 @@ const Statistics = () => {
     }
   }, []);
   console.log(myDonation);
+
   const data = [
     {
       name: "Total Donation",
@@ -30,7 +50,9 @@ const Statistics = () => {
       value: myDonation.length,
     },
   ];
-  const COLORS = ["#FF5733", "#3498db"];
+
+  const COLORS = ["#FF444A", "#00C49F"];
+
   return (
     <div>
       <h2 className="text-3xl text-center font-medium text-blue-300">
@@ -45,8 +67,17 @@ const Statistics = () => {
             cy="50%"
             outerRadius={140}
             fill="#8884d8"
-            labelLine={false} 
-            label={({ name, percent }) => `${(percent * 100)}%`}
+            labelLine={false}
+            label={({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => (
+              <CustomPieLabel
+                cx={cx}
+                cy={cy}
+                midAngle={midAngle}
+                innerRadius={innerRadius}
+                outerRadius={outerRadius}
+                percent={percent}
+              />
+            )}
           >
             {data.map((entry, index) => (
               <Cell
@@ -54,9 +85,6 @@ const Statistics = () => {
                 fill={COLORS[index % COLORS.length]}
               />
             ))}
-            {/* {data.map((entry, index) => (
-              <Label key={index} value={data.value} offset={0} position="inside" />
-            ))} */}
           </Pie>
           <Legend />
         </PieChart>
