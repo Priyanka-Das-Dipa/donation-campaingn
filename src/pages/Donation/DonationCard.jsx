@@ -23,25 +23,29 @@ const DonationCard = ({ donation }) => {
     }
   };
 
-
   return (
     <div>
       <div class="relative flex max-w-screen-xl flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
         <div class="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
-          <img className="w-full" src={image} alt="ui/ux review check" />
-          <div className="-mt-12 ml-10">
+          <img
+            className="w-full relative"
+            src={image}
+            alt="ui/ux review check"
+          />
+          <div
+            className="-mt-12 w-full -p-10 absolute bg-[#0B0B0B80]"
+            style={{ background: "rgba(11, 11, 11, 0.50)" }}
+          >
             <NavLink to="/statistics">
               <button
-                className="btn text-white"
+                className="btn text-white ml-5"
                 style={{ backgroundColor: text_color }}
                 onClick={handleDonationClick}
-                // disabled={isButtonClicked}
               >
                 Donation ${price}
               </button>
             </NavLink>
           </div>
-        </div>
       </div>
       <div class="pt-6 mb-10">
         <h4 class="font-bold block font-sans text-black text-2xl leading-snug tracking-normal text-blue-gray-900 antialiased">
@@ -52,6 +56,7 @@ const DonationCard = ({ donation }) => {
         </p>
       </div>
     </div>
+   </div> 
   );
 };
 
