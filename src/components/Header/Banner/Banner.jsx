@@ -18,22 +18,28 @@ const Banner = () => {
         console.error("Error loading data:", error);
       });
   }, []);
-
-  // Function to filter data based on the searchCategory
   const filterDataByCategory = () => {
     if (!searchCategory) {
-      setFilteredData(data); // If no category is entered, show all data
+      setFilteredData(data); 
     } else {
       const filteredItems = data.filter(
         (item) => item.category_name === searchCategory
       );
       setFilteredData(filteredItems);
+      console.log(filteredItems)
     }
   };
+  
 
   useEffect(() => {
     filterDataByCategory(); // Initial filtering
   }, [searchCategory, data]);
+
+  useEffect(() => {
+    if (filteredData.length > 0) {
+      console.log(filteredData);
+    }
+  }, [filteredData]);
 
   return (
     <div>
@@ -80,7 +86,6 @@ const Banner = () => {
         
       </div>
     </div>
-    
     </div>
     
   );

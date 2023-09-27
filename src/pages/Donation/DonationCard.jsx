@@ -5,13 +5,24 @@ import swal from "sweetalert";
 const DonationCard = ({ donation }) => {
   const { id, image, title, description, price, text_color } = donation || {};
   const [isButtonClicked, setIsButtonClicked] = useState(false);
+  const [donationsClicked, setDonationsClicked] = useState([]);
 
   const handleDonationClick = () => {
     if (!isButtonClicked) {
       swal("Good job!", "Your Donation Added!", "success");
       setIsButtonClicked(true);
+      setDonationsClicked([...donationsClicked, id]);
+    } else {
+      const isExists = donationsClicked.includes(id);
+      if (!isExists) {
+        swal("Good job!", "Your Donation Added!", "success");
+        setDonationsClicked([...donationsClicked, id]);
+      } else {
+        swal("Error!", "You've already donated to this category!", "error");
+      }
     }
   };
+
 
   return (
     <div>
@@ -24,7 +35,7 @@ const DonationCard = ({ donation }) => {
                 className="btn text-white"
                 style={{ backgroundColor: text_color }}
                 onClick={handleDonationClick}
-                disabled={isButtonClicked}
+                // disabled={isButtonClicked}
               >
                 Donation ${price}
               </button>
