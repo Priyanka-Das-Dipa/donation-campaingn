@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import swal from "sweetalert";
 
 const DonationCard = ({ donation }) => {
   const { id, image, title, description, price, text_color } = donation || {};
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
+
+  const handleDonationClick = () => {
+    if (!isButtonClicked) {
+      swal("Good job!", "Your Donation Added!", "success");
+      setIsButtonClicked(true);
+    }
+  };
 
   return (
     <div>
@@ -14,6 +23,8 @@ const DonationCard = ({ donation }) => {
               <button
                 className="btn text-white"
                 style={{ backgroundColor: text_color }}
+                onClick={handleDonationClick}
+                disabled={isButtonClicked}
               >
                 Donation ${price}
               </button>

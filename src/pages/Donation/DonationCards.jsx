@@ -19,7 +19,7 @@ const DonationCards = ({ donationCard }) => {
     if (!donationItem) {
       addToDonation.push(donationCard);
       localStorage.setItem("itemDonation", JSON.stringify(addToDonation));
-      swal("Good job!", "Your Donation Added!", "success");
+      swal("Good job!", "Your Donation Card is Added to the Donation Route!", "success");
     } else {
       const isExits = donationItem.find((donation) => donation.id === id);
       if (!isExits) {
